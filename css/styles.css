@@ -1,0 +1,61 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #171d33; /* Dark blue background color */
+    color: #f8e9e9; /* Light pink text color */
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#name-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    color: #ff77a9; /* Pink color for the text */
+}
+
+#name {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gradient blobs animation */
+@keyframes blob-animation {
+    0% {
+        border-radius: 50%;
+        background: radial-gradient(circle, #ff77a9, #5b6bff, #48bfe3);
+        transform: scale(0);
+    }
+    100% {
+        border-radius: 50%;
+        background: radial-gradient(circle, #ff77a9, #5b6bff, #48bfe3);
+        transform: scale(1);
+    }
+}
+
+/* Blurred glassmorphisim overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 1;
+}

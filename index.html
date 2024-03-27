@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful 3D Text with Particles</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div id="particles-js"></div>
+
+    <div id="name-container">
+      <h1 id="name"></h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/background.js"></script>
+
+    <script>
+      // Dynamically change the name
+      changeName("PixelZero");
+    </script>
+  </body>
+</html>
